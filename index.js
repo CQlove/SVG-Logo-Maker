@@ -1,10 +1,10 @@
 
-import inquirer from "inquirer";
-import fs from "fs";
-// const fs = require("fs");
-// const inquirer = require(`inquirer`);
-// const { Triangle, Square, Circle } = require("./lib/shapes.js");
-import { Triangle, Square, Circle } from "./lib/shapes.js";
+// import inquirer from "inquirer";
+// import fs from "fs";
+const fs = require("fs");
+const inquirer = require(`inquirer`);
+const { Triangle, Square, Circle } = require("./lib/shapes.js");
+// import { Triangle, Square, Circle } from "./lib/shapes.js";
 
 function prompName() {
     return inquirer.prompt([
@@ -61,7 +61,7 @@ function generateLogo(name, nameColor, shape, shapeColor) {
         logoShape = new Square(name, nameColor, shapeColor);
     }
 
-    const svgCode = logoShape.draw();
+    const svgCode = logoShape.render();
     fs.writeFileSync('logo.svg', svgCode);
     console.log('Success to create logo.svg!');
 }
