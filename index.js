@@ -1,10 +1,7 @@
-
-// import inquirer from "inquirer";
-// import fs from "fs";
 const fs = require("fs");
 const inquirer = require(`inquirer`);
 const { Triangle, Square, Circle } = require("./lib/shapes.js");
-// import { Triangle, Square, Circle } from "./lib/shapes.js";
+
 
 function prompName() {
     return inquirer.prompt([
