@@ -3,7 +3,6 @@ const { Triangle, Square, Circle } = require("./lib/shapes.js");
 const { promptName, promptNameColor, promptShape, promptShapeColor } = require("./lib/prompt.js");
 
 
-
 function generateLogo(name, nameColor, shape, shapeColor) {
     let logoShape;
 
@@ -22,7 +21,7 @@ function generateLogo(name, nameColor, shape, shapeColor) {
 
 async function generate() {
     try {
-        const { name } = await prompName();
+        const { name } = await promptName();
         const { nameColor } = await promptNameColor();
         const { shape } = await promptShape();
         const { shapeColor } = await promptShapeColor();
@@ -33,4 +32,4 @@ async function generate() {
     }
 }
 
-generate();
+generate(); 
