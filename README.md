@@ -48,3 +48,7 @@ Open the index.js in Node, after answering all the questions, you will get a log
 ## Usage
 
 Please watch the video:
+
+
+https://github.com/CQlove/SVG-Logo-Maker/assets/128104973/d5042a1f-106a-4695-8b16-1d8423fdedc5
+
