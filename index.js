@@ -1,6 +1,6 @@
 const fs = require("fs");
 const { Triangle, Square, Circle } = require("./lib/shapes.js");
-const { prompName, promptNameColor, promptShape, promptShapeColor } = require("./lib/prompt.js");
+const { promptName, promptNameColor, promptShape, promptShapeColor } = require("./lib/prompt.js");
 
 
 
